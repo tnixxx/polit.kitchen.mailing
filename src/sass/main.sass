@@ -7,6 +7,11 @@ $white: #FFFFFF
 body
     background-color: $black
 
+// main
+    // max-width: 75%
+    // margin-left: auto
+    // margin-right: auto
+
 h3, h4, p
     color: $white
 
@@ -14,21 +19,26 @@ h3
     font-family: "Druk Wide"
     text-align: center
     text-transform: uppercase
-    font-size: 45px
+    // font-size: 45px
+    font-size: 38px
     line-height: 54px
 
 h4
     font-family: "Montserrat"
     font-weight: bold
-    font-size: 44px
-    line-height: 54px
-    margin-bottom: 25px
+    // font-size: 44px
+    // line-height: 54px
+    font-size: 38px
+    line-height: 38px
+    margin-bottom: 20px
 
 p
     font-family: "Montserrat"
     font-weight: bold
-    font-size: 38px
-    line-height: 46px
+    // font-size: 38px
+    // line-height: 46px
+    font-size: 30px
+    line-height: 36px
 
 ul
     padding: 0
@@ -48,7 +58,7 @@ li
     background-color: $gray
     padding: 25px 30px
     border-radius: 25px
-    margin-bottom: 35px
+    margin-bottom: 25px
     margin-left: auto
     margin-right: auto
 
@@ -64,6 +74,7 @@ li
         width: 100%
     &__title
         margin-top: 25px
+        margin-bottom: 0px
 
 .hero
     background-image: url(../img/hero-ellipse.png)
@@ -100,6 +111,7 @@ li
         transition: 0.5s
         border-radius: 25px
         padding: 14px 50px
+        max-width: 473px
         &__text
             font-size: 31px
             color: $white
@@ -122,27 +134,104 @@ li
         align-items: center
         width: 100%
         opacity: 50%
+        &-logo
+            &__img
+                &:first-child
+                    max-width: 183px
+                &:last-child
+                    max-width: 193px
+                    margin-left: 25px
+
+
+
+// @media (max-width: 1056px)
+//     h3
+//         font-size: 35px
 
 @media (max-width: 992px)
-    h3
-        font-size: 38px
-    h4
-        font-size: 37px
-        line-height: 48px
-    p
-        font-size: 31px
-        line-height: 39px
-    ///////////////////////// 
-    .footer
-        display: none
-@media (max-width: 576px)
-    h3
-        font-size: 31px
-    h4
-        font-size: 30px
-        line-height: 41px
-    p
-        font-size: 24px
-        line-height: 32px
     .block
-        padding: 0
+        padding: 25px
+    h4
+        font-size: 34px
+        line-height: 38px
+        margin-bottom: 10px
+    p
+        font-size: 25px
+        line-height: 33px
+@media (max-width: 450px)
+    .header
+        &__img
+            max-width: 80%
+    .offer
+        &__title
+            font-size: 26px
+            line-height: 31px
+    .plan
+        &-list
+            &-item
+                &__text
+                    margin-bottom: 5px
+    h3
+        font-size: 30px
+        line-height: 39px
+    h4
+        font-size: 29px
+        line-height: 32px
+    p
+        font-size: 22px
+        line-height: 30px
+    li
+        &::before
+            display: none
+    .footer
+        &-button
+            &__text
+                font-size: 19px
+                width: 100%
+        &-copy
+            display: flex
+            flex-direction: column
+            align-items: center      
+            &-logo
+                width: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                &__img
+                    &:last-child
+                        margin-left: 0px
+                        margin-top: 15px      
+                        margin-bottom: 15px
+    // li
+    //     &::before
+    //         content: url(../img/fire.png)
+    //         width: 38px
+
+
+
+
+
+
+// @media (max-width: 992px)
+//     h3
+//         font-size: 38px
+//     h4
+//         font-size: 37px
+//         line-height: 48px
+//     p
+//         font-size: 31px
+//         line-height: 39px
+//     ///////////////////////// 
+//     // .footer
+//     //     display: none
+// @media (max-width: 576px)
+//     h3
+//         font-size: 31px
+//     h4
+//         font-size: 30px
+//         line-height: 41px
+//     p
+//         font-size: 24px
+//         line-height: 32px
+//     .block
+//         padding: 0
