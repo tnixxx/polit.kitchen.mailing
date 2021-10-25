@@ -1,0 +1,148 @@
+@import "fonts"
+$blue: #005CFF
+$black: #282828
+$gray: #4A4A4A
+$white: #FFFFFF
+
+body
+    background-color: $black
+
+h3, h4, p
+    color: $white
+
+h3
+    font-family: "Druk Wide"
+    text-align: center
+    text-transform: uppercase
+    font-size: 45px
+    line-height: 54px
+
+h4
+    font-family: "Montserrat"
+    font-weight: bold
+    font-size: 44px
+    line-height: 54px
+    margin-bottom: 25px
+
+p
+    font-family: "Montserrat"
+    font-weight: bold
+    font-size: 38px
+    line-height: 46px
+
+ul
+    padding: 0
+    margin-bottom: 0px
+
+li
+    display: flex
+    list-style-type: none
+    &::before
+        content: url(../img/fire.png)
+        margin-right: 7px
+
+.container
+    max-width: 1200px
+
+.block
+    background-color: $gray
+    padding: 25px 30px
+    border-radius: 25px
+    margin-bottom: 35px
+    margin-left: auto
+    margin-right: auto
+
+.header
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center 
+    margin-top: 40px
+    margin-bottom: 25px
+    &__img
+        max-width: 400px
+        width: 100%
+    &__title
+        margin-top: 25px
+
+.hero
+    background-image: url(../img/hero-ellipse.png)
+    background-repeat: no-repeat
+    background-position: right bottom
+
+.experience
+    background-image: url(../img/experience-ellipse.png)
+    background-repeat: no-repeat
+    background-position: right top
+
+.plan
+    background-image: url(../img/plan-ellipse.png)
+    background-repeat: no-repeat
+    background-position: left bottom
+
+.offer
+    background-image: url(../img/offer-ellipse.png)
+    background-repeat: no-repeat
+    background-position: left top
+    &__title
+        text-align: center
+        margin-bottom: 0px
+
+.footer
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-bottom: 50px
+    &-button
+        margin-top: 25px
+        background-color: $blue
+        transition: 0.5s
+        border-radius: 25px
+        padding: 14px 50px
+        &__text
+            font-size: 31px
+            color: $white
+            margin-bottom: 0px
+        &:hover
+            background-color: $white
+            .footer-button__text
+                color: $blue
+    &-nav
+        margin-top: 50px
+        &__link
+            opacity: 50%
+            transition: 0.3s
+            &:hover
+                opacity: 100%
+    &-copy
+        margin-top: 70px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        opacity: 50%
+
+@media (max-width: 992px)
+    h3
+        font-size: 38px
+    h4
+        font-size: 37px
+        line-height: 48px
+    p
+        font-size: 31px
+        line-height: 39px
+    ///////////////////////// 
+    .footer
+        display: none
+@media (max-width: 576px)
+    h3
+        font-size: 31px
+    h4
+        font-size: 30px
+        line-height: 41px
+    p
+        font-size: 24px
+        line-height: 32px
+    .block
+        padding: 0
